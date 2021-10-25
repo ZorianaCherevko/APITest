@@ -9,7 +9,7 @@ public class Tests {
     void getData4() {
         given()
                 .when()
-                .get("https://swapi.dev/api/starships/9/")
+                .get("/api/")
                 .then()
                 .body("name", equalTo("Death Star"))
                 .log().body();
